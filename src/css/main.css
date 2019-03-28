@@ -1,0 +1,6 @@
+* {
+  box-sizing: border-box; }
+  *::after {
+    content: ""; }
+
+/*# sourceMappingURL=maps/main.css.map */

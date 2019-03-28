@@ -1,0 +1,1 @@
+{"version":3,"file":"../main.css","sources":["main.scss"],"sourcesContent":["*{\r\n    box-sizing: border-box;\r\n    &::after{\r\n        content: \"\";\r\n    }\r\n}"],"names":[],"mappings":"AAAA,AAAA,CAAC,CAAA;EACG,UAAU,EAAE,UAAU,GAIzB;EALD,AAEI,CAFH,AAEI,OAAO,CAAA;IACJ,OAAO,EAAE,EAAE,GACd"}
