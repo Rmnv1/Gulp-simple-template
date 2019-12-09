@@ -19,17 +19,17 @@ var staticFiles = ['./src/*.html', './src/fonts/*'];
 /* Style processing */
 gulp.task('sass', function () {
     return gulp.src('src/scss/*.scss')
+    .pipe(sourcemaps.init())
      .pipe(plumber({
         errorHandler: function (error) {
           console.log(error.message);
           this.emit('end');
       }}))
-     .pipe(sourcemaps.init())
      .pipe(sass().on('error', sass.logError))
      .pipe(autoprefixer('last 2 versions'))
-     .pipe(sourcemaps.write('./maps'))
      .pipe(rename({suffix: '.min'}))
      .pipe(cleanCSS())
+     .pipe(sourcemaps.write('./maps'))
      .pipe(gulp.dest('src/css'))
 });
 
